@@ -11,3 +11,21 @@
 * rails s
 
 now browse: http://0.0.0.0:3000/posts
+
+
+Add the following line in Gemfile
+`gem 'twitter-bootstrap-rails'`
+
+run `bundle install`
+
+* rails g bootstrap:install
+* rails g bootstrap:layout application
+Press y when asked
+
+Restart rails server
+
+rm public/index.html
+
+Add to routes.rb:
+`root :to => "posts#index"`
+
