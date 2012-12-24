@@ -1,0 +1,13 @@
+== A Sample Blog application
+
+== Steps
+
+* rails new blog
+* cd blog
+* bundle install
+* rails g scaffold Post title:string content:text tags:string
+* rails g scaffold Comment name:string content:text post:references
+* rake db:migrate
+* rails s
+
+now browse: http://0.0.0.0:3000/posts
