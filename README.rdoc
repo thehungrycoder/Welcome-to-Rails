@@ -5,8 +5,8 @@
 * rails new blog
 * cd blog
 * bundle install
-* rails g scaffold Post title:string content:text tags:string
-* rails g scaffold Comment name:string content:text post:references
+* rails g scaffold Article title:string content:text display:boolean
+* rails g scaffold Comment name:string content:text article:references
 * rake db:migrate
 * rails s
 

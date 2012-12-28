@@ -1,7 +1,6 @@
 Blog::Application.routes.draw do
-  root :to => "posts#index"
-  resources :posts do
-    resources :comments
-  end
-  resource :comments
-end
+  resources :comments
+
+  resources :articles
+
+  root :to => 'articles#index'end
