@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
   # GET /comments/new.json
   def new
     @comment = Comment.new
-
+    @articles = Article.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @comment }
